@@ -1,0 +1,39 @@
+.social {
+  display: flex;
+  justify-content: center;
+
+  @include breakpoint($tablet-bp) {
+    display: none;
+  }
+}
+
+.social-item {
+  margin: 0 0.75rem;
+}
+
+.social-link {
+
+  &--color-blue-dark {
+    fill: rgb(59, 89, 152);
+  
+    &:hover {
+      fill: rgb(17, 79, 194);
+    }
+  }
+
+  &--color-blue-light-dark {
+    fill: rgb(94, 140, 226);
+
+    &:hover {
+      fill: rgb(43, 98, 201);
+    }
+  }
+
+  &--color-orange-dark {
+    fill: rgb(250, 110, 81);
+
+    &:hover {
+      fill: rgb(199, 83, 60);
+    }
+  }
+}

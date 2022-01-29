@@ -1,0 +1,165 @@
+---
+layout: default
+title: Home
+---
+
+<div class="stories">
+  <div class="stories-item" data-modal="story-modal">
+   <img class="stories-preview" src="https://img.fdb.cz/obrazky/26a8a42634886b7484906c4f53640e1f.jpg" alt="">
+    <div class="stories-title">Paris</div>
+    <time datetime="2020-09-21" class="stories-date">2020.09.21</time>
+  </div>
+  <div class="stories-item">
+    <img class="stories-preview" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Farol_da_Barra-Aveiro.JPG/140px-Farol_da_Barra-Aveiro.JPG" alt="">
+    <div class="stories-title">City</div>
+    <time datetime="2020-09-21" class="stories-date">2020.09.21</time>
+  </div>
+  <div class="stories-item">
+    <img class="stories-preview" src="https://s1.livelib.ru/boocover/1003262898/140/5cf1/Marcelo_dSalete__Run_For_It_Stories_Of_Slaves_Who_Fought_For_Their_Freedom.jpg" alt="">
+    <div class="stories-title">Book</div>
+    <time datetime="2020-09-21" class="stories-date">2020.09.21</time>
+  </div>
+  <div class="stories-item">
+    <img class="stories-preview" src="https://bbooks.info/b/images/478/931_140.jpg" alt="">
+    <div class="stories-title">Book</div>
+    <time datetime="2020-09-21" class="stories-date">2020.09.21</time>
+  </div>
+</div>
+
+<!-- Add post-->
+<div class="add-post">
+  <form class="add-post__form" action="/" method="POST">
+    <textarea class="add-post__textarea" name="post-text" placeholder="write post" data-autoresize></textarea>
+      <div class="add-post__form-actions">
+        <label class="add-post__file " for="add-post-file">
+          <img src="https://img.icons8.com/ultraviolet/40/000000/slr-camera.png" height="44" width="44" class="add-post__file--picture"/>
+          <input type="file" id="add-post-file">
+        </label>
+        <button class="add-post__send" type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" class="add-post__send-picture" height="44" width="44" viewBox="0 0 511.99999 511.99999">
+            <path d="m496 256c0 132.546875-107.453125 240-240 240s-240-107.453125-240-240 107.453125-240 240-240 240 107.453125 240 240zm0 0" fill="currentColor"/>
+            <g fill="#3d9ae2">
+              <path d="m256 0c-141.382812 0-256 114.617188-256 256s114.617188 256 256 256 256-114.617188 256-256c-.167969-141.316406-114.683594-255.832031-256-256zm0 480c-123.710938 0-224-100.289062-224-224s100.289062-224 224-224 224 100.289062 224 224c-.132812 123.65625-100.34375 223.867188-224 224zm0 0"/>
+              <path d="m203.3125 116.6875-22.625 22.625 116.6875 116.6875-116.6875 116.6875 22.625 22.625 128-128c6.246094-6.25 6.246094-16.375 0-22.625zm0 0"/>
+            </g>
+          </svg>
+        </button>
+      </div>
+  </form>
+</div>
+
+<div class="post">
+  <div class="post__content">
+    <p class="post__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Esse expedita aliquid saepe corporis error eos ab vel illo sequi maiores, aliquam
+      voluptatibus eaque placeat laudantium quos alias eius quis molestias.
+    </p>
+  </div>
+  <div class="post__footer">
+    <ul class="post__data">
+      <li>
+        <time datetime="2020-06-21 19:20">21.06.2021</time>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<article class="post">
+  <div class="post__header post__header--preview">
+    <img class="post__preview" src="assets/images/computer-1209641_960_720.jpg" width="600" height="200" alt="фото">
+  </div>
+    <div class="post__content">
+      <h2 class="post__title post__title--mb1">
+        <a href="post.html">Как писать код быстро</a>
+      </h2>
+      <p class="post__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Esse expedita aliquid saepe corporis error eos ab vel illo sequi maiores, aliquam
+        voluptatibus eaque placeat laudantium quos alias eius quis molestias.
+      </p>
+    </div>
+    <div class="post__footer">
+      <ul class="post__data">
+        <li class="post__data-item">
+          <time datetime="2020-06-21 19:20">21.06.2021</time>
+        </li>
+        <li>
+          <a href="#">create website</a>
+        </li>
+      </ul>
+      <a class="post__read" href="#">read</a>
+    </div>
+</article>
+
+<article class="post">
+  <div class="post__header post__header--video-margin-top">
+    <div class="embed">
+      <iframe width="600" height="314" src="https://www.youtube.com/embed/0UbkJ6Izue8"
+      title="YouTube video player" frameborder="0">
+      </iframe>
+    </div>
+  </div>
+    <div class="post__content">
+      <h2 class="post__title post__title--mb1">
+        <a href="#">Lecture</a>
+      </h2>
+      <p class="post__description">Lorem ipsum dolor sit amet consectetur adipisicing elit
+        Esse expedita aliquid saepe corporis error eos ab vel illo sequi maiores, aliquam
+        voluptatibus eaque placeat laudantium quos alias eius quis molestias.
+      </p>
+    </div>
+    <div class="post__footer">
+      <ul class="post__data">
+        <li class="post__data-item">
+          <time datetime="2020-06-21 19:20">22.06.2021</time>
+        </li>
+        <li>
+          <a href="#">programming</a>
+        </li>
+      </ul>
+      <a class="post__read" href="#">leave comment</a>
+    </div>
+</article>
+
+<article class="post">
+  <div class="post__header post__header--preview">
+    <img class="post__preview" src="assets/images/XHteKsMSat4.jpg" width="600" height="245" alt="фото">
+  </div>
+    <div class="post__content">
+      <h2 class="post__title post__title--mb1">
+        <a href="#">Conference</a>
+      </h2>
+      <p class="post__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Esse expedita aliquid saepe corporis error eos ab vel illo sequi maiores, aliquam
+        voluptatibus eaque placeat laudantium quos alias eius quis molestias.
+      </p>
+    </div>
+    <div class="post__footer">
+      <ul class="post__data">
+        <li class="post__data-item">
+          <time datetime="2020-06-21 19:20">23.06.2021</time>
+        </li>
+        <li>
+          <a href="#">live</a>
+        </li>
+      </ul>
+      <a class="post__read" href="#">read</a>
+    </div>
+</article>
+
+<ul class="pagination">
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">&lt;</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">1</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link active" href="#">2</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">3</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">&gt;</a>
+  </li>
+</ul>

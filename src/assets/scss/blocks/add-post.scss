@@ -1,0 +1,91 @@
+.add-post {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  box-shadow: 0 15px 25px rgba(#0D0D0D, .45); 
+  background-color: $secondary;
+  border-radius: 5px;
+  padding: 1.5rem 2rem;  
+}
+.add-post__form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.add-post__textarea {
+  display: block;
+  flex-grow: 1;
+  height: 26px;
+  font-size: 1.4rem;
+  margin-bottom: .7rem;
+  font-family: inherit;
+  color: #d2d2d2;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  overflow: hidden;
+
+  &::placeholder {
+    color: rgba($white, .4);
+
+    @include breakpoint($mobile-bp) {
+      font-size: 1.23rem;
+    }
+  }
+}
+
+.add-post__send,
+.add-post__file {
+  display: block;
+  width: 4.4rem;
+  height: 4.4rem;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color .2s linear;
+
+  @include breakpoint($mobile-bp) {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+.add-post__file {
+
+  input {
+    display: none;
+  }
+
+  &--picture {
+    
+    @include breakpoint($mobile-bp) {
+      margin-top: -6px;
+    }
+  }
+}
+
+
+
+.add-post__send {
+  background-color: $blue;
+}
+
+.add-post__form-actions {
+  width: 120px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-post__send-picture {
+  margin-left: -8px;
+  margin-top: -3px;
+
+  &:hover {
+    color: rgb(173, 193, 230);
+  }
+
+  @include breakpoint($mobile-bp) {
+    margin-left: -9px;
+    margin-top: -7px;
+  }
+}
